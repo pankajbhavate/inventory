@@ -5,11 +5,7 @@
 <listener class-name="utilities.Listner"></listener>
 </listeners>
   <test thread-count="5" name="Test">
-  <groups>
-  <run>
-  <include name="test"></include>
-  </run>
-  </groups>
+ 
     <classes>
       <class name="project.Hometestclass"/>
     </classes>

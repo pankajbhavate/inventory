@@ -9,7 +9,7 @@ public class property {
 	
 	Properties p;
 	
-	public property() throws IOException {
+	public  property() throws IOException {
 		
  FileInputStream f=  new FileInputStream("C:\\Users\\DELL\\eclipse-workspace\\InventoryManageSystem\\src\\test\\resources\\config\\customer.properties");
  

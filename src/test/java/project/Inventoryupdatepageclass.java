@@ -12,7 +12,8 @@ public class Inventoryupdatepageclass {
 	
 	WebDriver driver;
 	
-	
+	@FindBy(css = "[placeholder=\"Search in Inventory Adjustments ( / )\"]")
+	WebElement search;
 	@FindBy(xpath = "//a[text()=\"Inventory Adjustments\"]")
 	WebElement inventoryadjust;
 	@FindBy(css = "[viewBox=\"0 0 32 32\"]")
@@ -44,9 +45,9 @@ public class Inventoryupdatepageclass {
 	}
 	
 	public void refrencenum(String na) {
-		JavascriptExecutor j = (JavascriptExecutor)driver;
-		 j.executeScript("arguments[0].value='"+"34rrd"+"';", refrencenum);
+	  		
 		refrencenum.sendKeys(na);
+		
 	}
 	public void dates() {
 		dates.click();
@@ -67,6 +68,10 @@ public class Inventoryupdatepageclass {
 		
 	public void uploadfile(String na) {
 		uploadfile.sendKeys(na);
+	}
+	
+	public void searchfn(String s) {
+		search.sendKeys(s);
 	}
 	}
 	

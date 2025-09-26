@@ -190,6 +190,11 @@ public class Homepageclass {
 	public void description(String na) {
 		description.sendKeys(na);
 	}
+	
+	
+	public WebElement quanele() {
+	      return quantity;
+	}
 }
 
 

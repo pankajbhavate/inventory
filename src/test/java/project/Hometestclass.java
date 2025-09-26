@@ -8,12 +8,13 @@ import java.io.IOException;
 
 import java.util.concurrent.TimeUnit;
 
-
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
 import utilities.excel;
+import utilities.screensho2;
 
 public class Hometestclass extends Baseclass {
 	
@@ -25,12 +26,15 @@ public class Hometestclass extends Baseclass {
 	}
     
 	@Test(priority = 0)
-	public void customer() throws InterruptedException {
+	public void customer() throws InterruptedException, IOException {
 		 h = new Homepageclass(driver);
        driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+   	WebElement el =	h.quanele();
+	screensho2 s = new screensho2();
+	  s.screen(el);
 		h.quantity();
 		h.create();
-		h.customer();
+		h.customer(); 
 		h.salu();
 		h.fname(fname);
 		h.lname(lname);
