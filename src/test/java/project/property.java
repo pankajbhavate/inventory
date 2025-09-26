@@ -19,7 +19,7 @@ public class property {
 
 	
 	public String fname() {
-	String na =	p.getProperty("fname");
+	String na =	p.getProperty("lname");
 	return na;
 	}
 	
