@@ -30,7 +30,7 @@ public class Baseclass {
         company = p.companyna();
         email =  p.email();
         mobile=     p.mob();
-            pan =    p.pan();
+            pan =    p.pan(); 
 	}
 	
 	@BeforeClass(alwaysRun = true)
@@ -47,7 +47,7 @@ public class Baseclass {
 	
 	@AfterClass
 	public void teardown() {
-		//driver.close();
+		driver.close();
 	}
 
 }
